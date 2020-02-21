@@ -34,7 +34,7 @@ if alis != buying:                                              #
     with open("veri.json", "w") as f:                           #  If url info and our info isn't matched
         json.dump(json_data, f)                                 #   (means; if currency changed), it will update our JSON
 
-    #api.send_direct_message(recipient_id="<TWITTER USER ID>", text=a)  # Program will DM us new currency rate
+    api.send_direct_message(recipient_id="<TWITTER USER ID>", text=a)  # Program will DM us new currency rate
     print('Message sent!')
 
 else:
